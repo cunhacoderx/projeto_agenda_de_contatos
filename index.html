@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <title>Agenda de contatos</title>
+</head>
+<body>
+  <header>
+    <img src="./images/agenda.png.png" alt="Uma agenda de contatos"/>
+    <h1>Agenda de Contatos</h1>
+  </header>
+  <div class="container">
+    <form id="contact-form">
+      <h2>Nome:</h2>
+      <input type="text" id="contact-name" required placeholder="Ex: Irineu da Silva" />
+      <h2>Número:</h2>
+      <input type="tel" id="contact-number" required placeholder="(xx) 0-0000-0000" max="11" />
+    
+      <div class="favorite-container">
+        <label for="favorite-contact">Favorito</label>
+        <input type="checkbox" id="favorite-contact" />
+      </div>
+    
+      <button type="submit">Adicionar</button>
+    </form>
+    <table id="contact-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Número</th>
+          <th>Favorito</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os contatos serão inseridos aqui -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total de <span class="numero-de-contatos">0</span> contatos salvos</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <footer>
+    &copy; 2024 - Todos os direitos reservados - CunhaCoderX
+  </footer>
+  <script src="/script.js"></script>
+</body>
+</html>
